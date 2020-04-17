@@ -22,11 +22,11 @@ config=UConfig()
 ROOT_DIR=""
 COCO_MODEL_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
 dataset_train = CocoLikeDataset()
-dataset_train.load_data('datasets/kangaroo/kangaroo.json', 'datasets/kangaroo')
+dataset_train.load_data('datasets/kangaroo/train/kangaroo.json', 'datasets/train/kangaroo')
 dataset_train.prepare()
 
 dataset_val = CocoLikeDataset()
-dataset_val.load_data('datasets/kangaroo/kangaroo.json', 'datasets/kangaroo')
+dataset_val.load_data('datasets/kangaroo/val/kangaroo.json', 'datasets/val/kangaroo')
 dataset_val.prepare()
 
 # dataset = dataset_train
